@@ -52,7 +52,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "dino" ? 25 : 500;
+camera.position.z = objToRender === "dino" ? 25 : 50;
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
@@ -97,3 +97,4 @@ document.onmousemove = (e) => {
 
 //Start the 3D rendering
 animate();
+
