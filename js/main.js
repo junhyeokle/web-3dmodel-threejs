@@ -21,7 +21,7 @@ let object;
 let controls;
 
 //Set which object to render
-let objToRender = 'duck'; // ← 여기만 eye → duck으로 변경
+let objToRender = 'eye';
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
