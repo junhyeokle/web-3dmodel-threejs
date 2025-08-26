@@ -21,7 +21,7 @@ let object;
 let controls;
 
 //Set which object to render
-let objToRender = 'duck';
+let objToRender = 'eye';
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
@@ -97,4 +97,3 @@ document.onmousemove = (e) => {
 
 //Start the 3D rendering
 animate();
-
