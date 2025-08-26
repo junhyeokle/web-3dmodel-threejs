@@ -28,7 +28,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-  `./models/${objToRender}/scene.gltf`,
+  `./models/${objToRender}/scene.glb`,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
@@ -97,3 +97,4 @@ document.onmousemove = (e) => {
 
 //Start the 3D rendering
 animate();
+
