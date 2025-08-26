@@ -1,0 +1,12 @@
+/* --- keep your original resets --- */
+body { margin: 0; font-family: "Montserrat", sans-serif; background: #fff; color:#111; }
+
+/* 상단 큰 이미지 섹션(히어로) 안쪽에 3D를 넣을 때 쓰는 컨테이너 */
+.hero { position: relative; width:100%; height: 420px; border:1px solid #c8c9ff; border-radius:8px; overflow:hidden; background:#F2F3F7; }
+#hero3d, #container3D { position: absolute; inset: 0; }
+
+/* 캔버스는 부모 꽉 채우기 */
+#hero3d canvas, #container3D canvas {
+  position:absolute; inset:0;
+  width:100% !important; height:100% !important; display:block;
+}
