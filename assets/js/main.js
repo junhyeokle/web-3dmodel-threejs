@@ -28,7 +28,7 @@ loader.load(
   (gltf)=>{
     object = gltf.scene;
     scene.add(object);
-    fitCameraToObject(camera, object, 0.5, controls);
+    fitCameraToObject(camera, object, 0.1, controls);
     const ph = container.querySelector(".placeholder"); if (ph) ph.remove();
   },
   (xhr)=>{
