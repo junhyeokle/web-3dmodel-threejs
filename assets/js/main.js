@@ -27,6 +27,7 @@ loader.load(
   "assets/models/eye/scene.glb",
   (gltf)=>{
     object = gltf.scene;
+    object.scale.set(2, 2, 2);  // X, Y, Z 방향으로 2배 확대
     scene.add(object);
     fitCameraToObject(camera, object, 0.1, controls);
     const ph = container.querySelector(".placeholder"); if (ph) ph.remove();
